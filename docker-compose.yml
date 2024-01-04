@@ -5,11 +5,11 @@ services:
     container_name: docker_smb
     tty: true
     # Name of your pc
-    hostname: docker_smb
+    hostname: server
     network_mode: host
     build:
       context: .
       shm_size: '100mb'
       dockerfile: Dockerfile
     volumes:
-      - /media/hd/ps2:/media/ps2:rw
+      - /storage/media/games/PS2/ps2smb:/media/ps2:rw
