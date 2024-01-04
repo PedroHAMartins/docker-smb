@@ -3,9 +3,9 @@
 FROM alpine:3.10
 
 # Your system user
-ARG USER='luiz'
+ARG USER='pedro'
 # SMB and SYSTEM password
-ARG PASS='smbpass'
+ARG PASS='pedro'
 
 # install sudo
 RUN apk add --no-cache --update sudo
